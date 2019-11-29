@@ -1,0 +1,26 @@
+RocketMiles Skills Test
+By: Jim Wazorick
+jwazorick@gmail.com
+
+This repository will run through a number of tests on the Rocketmiles.com website
+
+The tests in the repository were created on a Windows 10 laptop with the following software:
+- IntelliJ
+- Selenium
+- Chrome v78.0.3904.108
+- Chromedriver v78.0.3904.105
+
+To properly run the tests, you should have a fairly recent version of Chrome and ChromeDriver loaded on your system
+
+The tests can be run by issues a gradle command for:
+gradlew test
+
+It may be slightly different on a Mac:
+./gradlew test
+
+The tests are located in src/test/java/website/
+They are divided based on function/page. There are a few tests for the Index page specifically, some test with different search parameters, and some tests for functionality on the results page
+
+The page objects are located in src/main/java/pages/
+
+Please let me know if you have any questions. Thank you for your time
