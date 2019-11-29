@@ -181,4 +181,8 @@ public class IndexPage {
     public String getCheckOutDate() {
         return checkOutDate.getText();
     }
+
+    public String getLocation() {
+        return locationSearch.getAttribute("value");
+    }
 }

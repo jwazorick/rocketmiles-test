@@ -57,4 +57,13 @@ public class IndexPageTests {
         indexPage.clickSearchButtonStayOnIndex();
         assertTrue(indexPage.doesRewardWarningPopupDisplay());
     }
+
+    @Test
+    public void partialCitySearch() {
+        String city = "San Diego, CA";
+        String partialCity = "San Di";
+        indexPage.inputLocation(partialCity);
+        indexPage.inputReward("Amazon.com Gift Card");
+        assertTrue(indexPage.getLocation().contains(city));
+    }
 }
